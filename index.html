@@ -4,88 +4,145 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            height: 400px;
+            width: 700px;
+        
+            border-collapse: collapse ;
+            position: relative;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+        thead, tfoot {
+            background-color:lightgray
+        }
+        caption {
+            /* Tamanho da fonte */
+            font-size: 1.5em;
+            /* Para colocar em negrito */
+            font-weight: bold;
+            /* Para deixar mais espaçado */
+            padding: 10px;
+            /* Colocar um fundo no meu caption */
+            background-color: gray;
+
+        }
+    </style>
 </head>
-    <table>
+    <table border="">
         <caption>Populção dos Estados - 2024</caption>
         <thead>
             <tr>
-                <th>Estado</th>
+                <th align="left">Estado</th>
                 <th>População</th>
+                <th align="left">Comando HTML utilizado</th>
             </tr>
         </thead>
         <tr>
                 <td><b>Acre</b></td>
-                <td><mark>830.018</mark></td>
+                <td align="right"><mark>830.018</mark></td>
+                <td><b>negrito</b> e <mark>destacado</mark></td>
             </tr>
             <tr>
             <td><i>Alagoas</i></td>
-            <td>3.365.351</td>
+            <td align="right">3.365.351</td>
+            <td><i>italico</i></td>
             </tr>
             <tr>
                 <td><u>Amapá</u></td>
-                <td>877.613</td>
+                <td align="right">877.613</td>
+                <td><u>sublinhado</u></td>
             </tr>
             <tr>
                 <td><del>Amazonas</del></td>
-                <td><u>4.269.995</u></td>
+                <td align="right"><u>4.269.995</u></td>
+                <td><del>texto riscado</del> e <u>texto sublinhado</u></td>
             </tr>
             <tr>
-                <td><sup>Bahia</sup></td>
-                <td>14.141.626</td>
+                <td><sub>Bahia</sub></td>
+                <td align="right">14.141.626</td>
+                <td><sub>sobescrito</sub></td>
             </tr>
             <tr>
                 <td>CE</td>
-                <td>9.240.580</td>
+                <td align="right">9.240.580</td>
+                <o>
+                    <td>Abreviação</td>
+                </o>
             </tr>
             <tr>
                 <td><b>Distrito Federal</b></td>
-                <td>3.098.883</td>
+                <td align="right">3.098.883</td>
+                <td><b>negrito</b></td>
             </tr>
             <tr>
                 <td><q>Espirito Santo</q></td>
-                <td>4.108.508</td>
+                <td align="right">4.108.508</td>
+                <td><q>citação</q></td>
             </tr>
             <tr>
                 <td><q>Goias</q></td>
-                <td>7.206.589</td>
+                <td align="right" >7.206.589</td>
+                <td><q>citação</q></td>
             </tr>
             <tr>
                 <td><small>Maranhão</small></td>
-                <td>6.775.805</td>
+                <td align="right">6.775.805</td>
+                <td><small>texto pequeno</small></td>
             </tr>
             <tr>
                 <td><pre>Mato Grosso</pre></td>
-                <td>3.658.813</td>
+                <td align="right">3.658.813</td>
+                <td><pre>texto pre-formatado</pre></td>
             </tr>
             <tr>
                 <td><small>paraíba</small></td>
-                <td>4.059.905</td>
+                <td align="right">4.059.905</td>
+                <td><small>texto pequeno</small></td>
             </tr>
             <tr>
                 <td><sub>Piauí</sub></td>
-                <td>3.281.480</td>
+                <td align="right">3.281.480</td>
+                <td><sub>texto subescrito</sub></td>
             </tr>
             <tr>
                 <td>Rio de Janeiro</td>
-                <td>16.054.524</td>
+                <td align="right">16.054.524</td>
+                <td>citação em bloco</td>
             </tr>
             <tr>
                 <td><b>Rio Grande do sul</b></td>
-                <td>10.882.965</td>
+                <td align="right">10.882.965</td>
+                <td><b>negrito</b></td>
             </tr>
             <tr>
                 <td><i>România</i></td>
-                <td>1.161.379</td>
+                <td align="right">1.161.379</td>
+                <td><i>italico</i></td>
+            </tr>
+            <tr>
+                <td><mark>Roraima</mark></td>
+                <td align="right">636.707</td>
+                <td><mark>texto destacado</mark></td>
             </tr>
             <tr>
                 <td>TO</td>
-                <td>1.607.363</td>
+                <td align="right">1.607.363</td>
+                <o>
+                    <td>abreviação</td>
+                </o>
             </tr>
         </tbody>
         <tfoot>
-            <th>Total da População Estimada</th>
-            <th>Soma total</th>
+            <th align="left">Total da População Estimada</th>
+            <th align="right">Soma total</th>
         </tfoot>
     </table>
 </body>
